@@ -1,0 +1,34 @@
+# Repository-local Arduino packages, libraries, caches, and builds
+/.arduino/
+
+# Build output (Arduino IDE, CLI, and PlatformIO)
+build/
+.pio/
+*.o
+*.a
+*.d
+*.elf
+*.hex
+*.bin
+*.eep
+*.map
+*.lst
+*.su
+
+# Local credentials and environment overrides
+.env
+.env.*
+!.env.example
+!.env.*.example
+arduino_secrets.h
+
+# Editor and operating-system files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="510" viewBox="0 0 1120 510" role="img" aria-labelledby="title desc">
+<title id="title">LED matrix message — USB connection</title><desc id="desc">Computer connects by a USB data cable to the USB-C port on the Arduino UNO R4 WiFi. The built-in 12 by 8 LED matrix displays scrolling text. No external circuit is needed.</desc>
+<defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="#334155"/></marker></defs>
+<rect width="1120" height="510" fill="#f8fafc"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#0f172a">
+<text x="40" y="48" font-size="30" fill="#0f172a" text-anchor="start" font-weight="bold">LED MATRIX MESSAGE</text>
+<text x="40" y="82" font-size="19" fill="#475569" text-anchor="start" font-weight="normal">UNO R4 WiFi · built-in display · no external circuit</text>
+<rect x="50" y="160" width="245" height="165" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<rect x="67" y="177" width="211" height="127" rx="0" fill="#fff" stroke="none" stroke-width="2"/>
+<text x="172" y="244" font-size="23" fill="#0f172a" text-anchor="middle" font-weight="bold">Computer</text>
+<path d="M172 326 V351 M125 351 H220" fill="none" stroke="#475569" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M296 245 H530" fill="none" stroke="#0369a1" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="414" y="210" font-size="18" fill="#0369a1" text-anchor="middle" font-weight="normal">USB data cable</text>
+<text x="414" y="282" font-size="17" fill="#475569" text-anchor="middle" font-weight="normal">Power + upload</text>
+<rect x="540" y="135" width="530" height="255" rx="20" fill="#e0f2f1" stroke="#0f766e" stroke-width="2"/>
+<rect x="527" y="222" width="40" height="46" rx="7" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
+<text x="588" y="180" font-size="24" fill="#0f172a" text-anchor="start" font-weight="bold">ARDUINO UNO R4 WiFi</text>
+<text x="585" y="250" font-size="19" fill="#0f766e" text-anchor="start" font-weight="bold">USB-C</text>
+<text x="585" y="288" font-size="18" fill="#0f172a" text-anchor="start" font-weight="normal">Built-in</text>
+<text x="585" y="314" font-size="18" fill="#0f172a" text-anchor="start" font-weight="normal">12 × 8 matrix</text>
+<rect x="810" y="207" width="230" height="161" rx="10" fill="#0f172a" stroke="none" stroke-width="2"/>
+<circle cx="827" cy="224" r="5" fill="#334155"/>
+<circle cx="845" cy="224" r="5" fill="#334155"/>
+<circle cx="863" cy="224" r="5" fill="#334155"/>
+<circle cx="881" cy="224" r="5" fill="#334155"/>
+<circle cx="899" cy="224" r="5" fill="#334155"/>
+<circle cx="917" cy="224" r="5" fill="#334155"/>
+<circle cx="935" cy="224" r="5" fill="#334155"/>
+<circle cx="953" cy="224" r="5" fill="#334155"/>
+<circle cx="971" cy="224" r="5" fill="#334155"/>
+<circle cx="989" cy="224" r="5" fill="#334155"/>
+<circle cx="1007" cy="224" r="5" fill="#334155"/>
+<circle cx="1025" cy="224" r="5" fill="#334155"/>
+<circle cx="827" cy="242" r="5" fill="#334155"/>
+<circle cx="845" cy="242" r="5" fill="#334155"/>
+<circle cx="863" cy="242" r="5" fill="#334155"/>
+<circle cx="881" cy="242" r="5" fill="#334155"/>
+<circle cx="899" cy="242" r="5" fill="#334155"/>
+<circle cx="917" cy="242" r="5" fill="#334155"/>
+<circle cx="935" cy="242" r="5" fill="#334155"/>
+<circle cx="953" cy="242" r="5" fill="#334155"/>
+<circle cx="971" cy="242" r="5" fill="#334155"/>
+<circle cx="989" cy="242" r="5" fill="#334155"/>
+<circle cx="1007" cy="242" r="5" fill="#334155"/>
+<circle cx="1025" cy="242" r="5" fill="#334155"/>
+<circle cx="827" cy="260" r="5" fill="#334155"/>
+<circle cx="845" cy="260" r="5" fill="#334155"/>
+<circle cx="863" cy="260" r="5" fill="#fb7185"/>
+<circle cx="881" cy="260" r="5" fill="#fb7185"/>
+<circle cx="899" cy="260" r="5" fill="#fb7185"/>
+<circle cx="917" cy="260" r="5" fill="#fb7185"/>
+<circle cx="935" cy="260" r="5" fill="#fb7185"/>
+<circle cx="953" cy="260" r="5" fill="#fb7185"/>
+<circle cx="971" cy="260" r="5" fill="#fb7185"/>
+<circle cx="989" cy="260" r="5" fill="#fb7185"/>
+<circle cx="1007" cy="260" r="5" fill="#334155"/>
+<circle cx="1025" cy="260" r="5" fill="#334155"/>
+<circle cx="827" cy="278" r="5" fill="#334155"/>
+<circle cx="845" cy="278" r="5" fill="#334155"/>
+<circle cx="863" cy="278" r="5" fill="#fb7185"/>
+<circle cx="881" cy="278" r="5" fill="#334155"/>
+<circle cx="899" cy="278" r="5" fill="#334155"/>
+<circle cx="917" cy="278" r="5" fill="#334155"/>
+<circle cx="935" cy="278" r="5" fill="#334155"/>
+<circle cx="953" cy="278" r="5" fill="#334155"/>
+<circle cx="971" cy="278" r="5" fill="#334155"/>
+<circle cx="989" cy="278" r="5" fill="#fb7185"/>
+<circle cx="1007" cy="278" r="5" fill="#334155"/>
+<circle cx="1025" cy="278" r="5" fill="#334155"/>
+<circle cx="827" cy="296" r="5" fill="#334155"/>
+<circle cx="845" cy="296" r="5" fill="#334155"/>
+<circle cx="863" cy="296" r="5" fill="#fb7185"/>
+<circle cx="881" cy="296" r="5" fill="#334155"/>
+<circle cx="899" cy="296" r="5" fill="#334155"/>
+<circle cx="917" cy="296" r="5" fill="#334155"/>
+<circle cx="935" cy="296" r="5" fill="#334155"/>
+<circle cx="953" cy="296" r="5" fill="#334155"/>
+<circle cx="971" cy="296" r="5" fill="#334155"/>
+<circle cx="989" cy="296" r="5" fill="#fb7185"/>
+<circle cx="1007" cy="296" r="5" fill="#334155"/>
+<circle cx="1025" cy="296" r="5" fill="#334155"/>
+<circle cx="827" cy="314" r="5" fill="#334155"/>
+<circle cx="845" cy="314" r="5" fill="#334155"/>
+<circle cx="863" cy="314" r="5" fill="#fb7185"/>
+<circle cx="881" cy="314" r="5" fill="#fb7185"/>
+<circle cx="899" cy="314" r="5" fill="#fb7185"/>
+<circle cx="917" cy="314" r="5" fill="#fb7185"/>
+<circle cx="935" cy="314" r="5" fill="#fb7185"/>
+<circle cx="953" cy="314" r="5" fill="#fb7185"/>
+<circle cx="971" cy="314" r="5" fill="#fb7185"/>
+<circle cx="989" cy="314" r="5" fill="#fb7185"/>
+<circle cx="1007" cy="314" r="5" fill="#334155"/>
+<circle cx="1025" cy="314" r="5" fill="#334155"/>
+<circle cx="827" cy="332" r="5" fill="#334155"/>
+<circle cx="845" cy="332" r="5" fill="#334155"/>
+<circle cx="863" cy="332" r="5" fill="#334155"/>
+<circle cx="881" cy="332" r="5" fill="#334155"/>
+<circle cx="899" cy="332" r="5" fill="#334155"/>
+<circle cx="917" cy="332" r="5" fill="#334155"/>
+<circle cx="935" cy="332" r="5" fill="#334155"/>
+<circle cx="953" cy="332" r="5" fill="#334155"/>
+<circle cx="971" cy="332" r="5" fill="#334155"/>
+<circle cx="989" cy="332" r="5" fill="#334155"/>
+<circle cx="1007" cy="332" r="5" fill="#334155"/>
+<circle cx="1025" cy="332" r="5" fill="#334155"/>
+<circle cx="827" cy="350" r="5" fill="#334155"/>
+<circle cx="845" cy="350" r="5" fill="#334155"/>
+<circle cx="863" cy="350" r="5" fill="#334155"/>
+<circle cx="881" cy="350" r="5" fill="#334155"/>
+<circle cx="899" cy="350" r="5" fill="#334155"/>
+<circle cx="917" cy="350" r="5" fill="#334155"/>
+<circle cx="935" cy="350" r="5" fill="#334155"/>
+<circle cx="953" cy="350" r="5" fill="#334155"/>
+<circle cx="971" cy="350" r="5" fill="#334155"/>
+<circle cx="989" cy="350" r="5" fill="#334155"/>
+<circle cx="1007" cy="350" r="5" fill="#334155"/>
+<circle cx="1025" cy="350" r="5" fill="#334155"/>
+<text x="40" y="440" font-size="20" fill="#0f172a" text-anchor="start" font-weight="normal">The sketch scrolls “GOOD NIGHT” and pauses for one second between repeats.</text>
+<text x="40" y="477" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">No breadboard, jumper wires, or external LEDs needed. Board illustration is simplified.</text>
+</g></svg>

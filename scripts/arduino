@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+
+PROJECT_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+export ARDUINO_DIRECTORIES_DATA="$PROJECT_ROOT/.arduino/data"
+export ARDUINO_DIRECTORIES_DOWNLOADS="$PROJECT_ROOT/.arduino/downloads"
+export ARDUINO_DIRECTORIES_USER="$PROJECT_ROOT/.arduino/user"
+export ARDUINO_BUILD_CACHE_PATH="$PROJECT_ROOT/.arduino/cache"
+
+exec arduino-cli "$@"

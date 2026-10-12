@@ -3,22 +3,48 @@
 A starter-kit experiment for the **Arduino UNO R4 WiFi** using a pushbutton,
 one green LED, and two red LEDs.
 
-**Status:** in progress. The sketch configures D3–D5 as outputs and reads
-the button on D2. The planned LED behavior is not implemented yet.
+**Status:** the button and LED behavior is implemented in the sketch.
 The circuit below is a proposed setup for this project; it has
 not been tested on hardware in this repository.
 
-## Intended behavior
+## Behavior
 
 - Button released: green LED on, both red LEDs off.
-- Button held: green LED off, red LEDs alternate.
+- Button held: green LED off, red LEDs alternate every 250 ms.
 
 ## Circuit
 
-![Proposed Spaceship Interface schematic: D3 to a green LED, D4 and D5 to red LEDs, each through a 1 kilohm resistor to ground; D2 connects to a button to 5 V and a 10 kilohm pull-down to ground.](images/circuit.svg)
+```mermaid
+flowchart LR
+    D3["UNO D3"] ---|"anode (+)"| GREEN["Green LED"]
+    GREEN ---|"cathode (-)"| R3["1 kΩ"]
+    R3 --- GND["UNO GND"]
 
-This is a logical schematic, not a breadboard placement diagram. Pin labels
-refer to the board headers; their positions in the drawing are illustrative.
+    D4["UNO D4"] ---|"anode (+)"| RED1["Red LED 1"]
+    RED1 ---|"cathode (-)"| R4["1 kΩ"]
+    R4 --- GND
+
+    D5["UNO D5"] ---|"anode (+)"| RED2["Red LED 2"]
+    RED2 ---|"cathode (-)"| R5["1 kΩ"]
+    R5 --- GND
+
+    V5["UNO 5V"] --- BUTTON["Normally open pushbutton"]
+    BUTTON --- SIGNAL(("Junction"))
+    D2["UNO D2: INPUT"] --- SIGNAL
+    SIGNAL --- PULLDOWN["10 kΩ pull-down"]
+    PULLDOWN --- GND
+
+    classDef green fill:#dcfce7,stroke:#15803d,color:#14532d
+    classDef red fill:#fee2e2,stroke:#b91c1c,color:#7f1d1d
+    class GREEN green
+    class RED1,RED2 red
+```
+
+Edit the Mermaid block in this README to change the diagram. GitHub renders
+it directly. Lines represent electrical connections, with each LED resistor
+between the **cathode (negative leg)** and GND. The junction joins D2, the
+button, and the pull-down resistor. This is a logical wiring diagram; it does
+not specify breadboard hole positions.
 
 ### Components
 
@@ -36,12 +62,12 @@ refer to the board headers; their positions in the drawing are illustrative.
 
 | Board pin | Connection |
 | --- | --- |
-| D3 | 1 kΩ resistor → green LED anode (+); LED cathode (−) → GND. |
-| D4 | 1 kΩ resistor → first red LED anode (+); LED cathode (−) → GND. |
-| D5 | 1 kΩ resistor → second red LED anode (+); LED cathode (−) → GND. |
+| D3 | Green LED anode (+); LED cathode (−) → 1 kΩ resistor → GND. |
+| D4 | First red LED anode (+); LED cathode (−) → 1 kΩ resistor → GND. |
+| D5 | Second red LED anode (+); LED cathode (−) → 1 kΩ resistor → GND. |
 | D2 | One side of the button, plus a 10 kΩ resistor to GND. |
 | 5V | Other side of the button. |
-| GND | Common ground for all LED cathodes and the pull-down resistor. |
+| GND | Common ground for the ground-side ends of all three LED resistors and the pull-down resistor. |
 
 Use the LED's longer leg as the anode; the shorter leg/flat edge marks the
 cathode. A four-legged tactile button has internally connected pairs: use
@@ -52,6 +78,10 @@ The UNO R4 WiFi GPIO current limit is **8 mA per pin**, according to the
 [Arduino datasheet, section 11.3](https://docs.arduino.cc/resources/datasheets/ABX00087-datasheet.pdf).
 This proposed circuit uses **1 kΩ** series resistors: even ignoring the LED
 voltage drop, 5 V / 1 kΩ limits current to 5 mA per LED.
+
+A current-limiting resistor works on either side of an LED when connected
+in series; this diagram places it on the cathode side to match the circuit
+being built. [Why either position works](https://sparkfuneducation.com/concept-library/voltage-current-resistance.html).
 
 With this pull-down circuit, D2 uses `INPUT`: released reads `LOW`,
 pressed reads `HIGH`. D3–D5 are configured as `OUTPUT` in the sketch.
@@ -67,14 +97,15 @@ make upload PROJECT=spaceship-interface PORT=/dev/cu.usbmodem123
 ```
 
 Replace the example port with the one reported by `make boards`.
-The current sketch compiles and reads the button but does not yet control the LEDs.
+After upload, check the green light with the button released, then hold the
+button to check the alternating red lights.
 
 ## Notes
 
 Add a photo of your assembled circuit in `images/` and record any wiring
 changes or observations here as you build it.
 
-The SVG is an original illustration for this repository. The intended behavior
+The Mermaid diagram is maintained as text in this README. The behavior
 and pin assignment follow the familiar Spaceship Interface exercise; see
 [Rexhep Mustafovski's example on Arduino Project Hub](https://projecthub.arduino.cc/rexhepmustafovski/arduino-spaceship-alert-interface-system-6c1ad3).
 The resistor values above are chosen for this UNO R4 WiFi setup.

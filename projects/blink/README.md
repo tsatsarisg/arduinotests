@@ -8,7 +8,11 @@ from the original test.
 
 ## Connections
 
-![Computer connected by a USB data cable to the UNO R4 WiFi USB-C port; the built-in 12 by 8 LED matrix is used with no external wiring.](images/circuit.svg)
+```mermaid
+flowchart LR
+    COMPUTER["Computer"] ---|"USB data cable: power + upload"| BOARD["Arduino UNO R4 WiFi"]
+    BOARD ---|"built-in connection"| MATRIX["12 × 8 LED matrix"]
+```
 
 ### Components
 
@@ -18,7 +22,9 @@ from the original test.
 No breadboard, external LEDs, resistors, or jumper wires are required.
 The matrix is already connected on the board, as described in the
 [Arduino LED matrix guide](https://docs.arduino.cc/tutorials/uno-r4-wifi/led-matrix/).
-The image is an original, simplified connection diagram.
+The diagram is editable Mermaid text in this README and renders directly
+on GitHub. Plug the cable into the board’s USB-C port; the matrix needs no
+external wiring.
 
 ## Compile and upload
 
